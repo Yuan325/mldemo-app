@@ -1,0 +1,40 @@
+.box {
+	position: absolute;
+	width: 550px;
+	height: 504px;
+	left: 87px;
+	top: 140px;
+
+	background: #FFFFFF;
+	border: 2px solid #6991F9;
+	box-sizing: border-box;
+	box-shadow: -4px 4px 5px 2px rgba(0, 0, 0, 0.25);
+}
+
+.eclipse {
+	position: absolute;
+	width: 110px;
+	height: 110px;
+	left: 208px;
+	top: 75px;
+
+	background: #6991F9;
+	border: 3px solid #3D22E3;
+	box-sizing: border-box;
+}
+
+.boxtext {
+	position: absolute;
+	left: 100px;
+	top: 100px;
+
+	font-family: Poor Story;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 30px;
+	text-align: center;
+	text-transform: capitalize;
+
+	color: #000000;
+}
