@@ -1,4 +1,5 @@
 import React from "react";
+import './BertQAComponent.css';
 
 class BertQA extends React.Component{
 	constructor(props){
@@ -12,6 +13,7 @@ class BertQA extends React.Component{
 
 	handleSubmit = async (event) => {
 		event.preventDefault();
+		this.setState({answer: "running...."});
 		await fetch('https://mldemo-backend.herokuapp.com/bertqa', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json'},
@@ -26,19 +28,23 @@ class BertQA extends React.Component{
 	render(){
 		return (
 			<div>
+			<div className="modelTitle">
+			BERT: Question Answering System
+			</div>
+			<div className="form">
 			<form onSubmit={this.handleSubmit}>
-				<label>
-					Question:
-					<input type="text" value={this.state.value} name="question" onChange={this.handleChange} />
-				</label>
-				<label>
-					Context:
-					<input type="text" value={this.state.value} name="context" onChange={this.handleChange} />
-				</label>
-				<input type="submit" value="Submit"/>
+				<label className="formLabel">Question:</label>
+				<input className="formInput" type="text" value={this.state.value} name="question" placeholder="Place your question here.."  onChange={this.handleChange} />
+			<br />
+				<label className="formLabel">Context:</label> 
+				<input className="formInput" type="text" value={this.state.value} name="context" placeholder="Place your context here.." onChange={this.handleChange} />
+				<input className="formBtn" type="submit" value="Submit"/>
 			</form>
-			
-			<p>{ this.state.answer } </p>
+			<label className="formLabel">Answer: </label>
+			<div className="modelResp">	
+			{ this.state.answer }
+			</div>
+			</div>
 			</div>
 		);
 	}

@@ -38,3 +38,15 @@
 
 	color: #000000;
 }
+
+.listInfo {
+	text-decoration: none;
+}
+
+.listInfo:hover {
+	text-shadow: 2px 2px 4px #b4b1b1;
+}
+
+.listInfo:visited {
+	color: inherit;
+}

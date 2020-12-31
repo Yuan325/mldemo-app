@@ -8,7 +8,7 @@ const Box1 = () => {
 		<div className="boxtext">
 			Pick A Model:
 			<br />
-			<br /><Link to="/bertqa">BERT Question Answering System</Link>
+			<br /><Link className="listInfo" to="/bertqa">BERT: Question Answering System</Link>
 		</div>
 	</div>
 	);

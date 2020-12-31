@@ -1,0 +1,18 @@
+.header{
+	background: #3D22E3;
+}
+
+.linkDeco{
+	text-decoration: none;
+}
+
+.linkDeco:visited{
+	color: inherit;
+}
+
+.logo{
+	color: #79D7EC;
+	text-align: left;
+	font-weight: 600;
+	font-family: Work Sans, sans-serif;
+}
